@@ -18,14 +18,15 @@ public class Ship {
 		String result = "miss";
 		int index = locationCells.indexOf(userInput);
 		
-		if (index >= 0)
+		if (index >= 0){
 			locationCells.remove(index);
 		
-		if (locationCells.isEmpty()) {
-			result = "kill";
-			System.out.println("Ouch! You sunk the " + name + "!");
-		} else
-			result = "hit";
+			if (locationCells.isEmpty()) {
+				result = "kill";
+				System.out.println("Ouch! You sunk the " + name + "!");
+			} else
+				result = "hit";
+		}
 		
 		return result;
 	}
