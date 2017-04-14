@@ -25,6 +25,7 @@ public class GameHelper {
 	}
 	
 	public ArrayList<String> placeShip (int comSize) {
+
 		ArrayList<String> alphaCells = new ArrayList<String>();
 		String [] alphaCoords = new String [comSize];
 		String temp = null;
@@ -55,24 +56,24 @@ public class GameHelper {
 						 //System.out.print(" used " + location);
 						success = false;
 					}
-				}
 			}
-			
-			int x = 0;
-			int row = 0;
-			int column = 0;
-			 //System.out.println("\n");
-			while (x < comSize) {
-				grid[coords[x]] = 1;
-				row = (int) (coords[x] / gridLength);
-				column = coords[x] % gridLength;
-				temp = String.valueOf(alphabet.charAt(column));
-				
-				alphaCells.add(temp.concat(Integer.toString(row)));
-				x++;
-				 //System.out.print(" coord " + x + " = " + alphaCells.get(x-1));
-			}
-			//System.out.println("\n");
-			return alphaCells;
 		}
+			
+		int x = 0;
+		int row = 0;
+		int column = 0;
+		 //System.out.println("\n");
+		while (x < comSize) {
+			grid[coords[x]] = 1;
+			row = (int) (coords[x] / gridLength);
+			column = coords[x] % gridLength;
+			temp = String.valueOf(alphabet.charAt(column));
+				
+			alphaCells.add(temp.concat(Integer.toString(row)));
+			x++;
+				 //System.out.print(" coord " + x + " = " + alphaCells.get(x-1));
+		}
+		 //System.out.println("\n");
+		return alphaCells;
+	}
 }
