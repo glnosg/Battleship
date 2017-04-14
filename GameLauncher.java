@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class GameLauncher {
 
 		private GameHelper helper = new GameHelper();
@@ -15,9 +16,9 @@ public class GameLauncher {
 			two.setName("Eagle");
 			three.setName("Wolverine");
 			
-			shipList.add(one);
-			shipList.add(two);
-			shipList.add(three);
+			shipsList.add(one);
+			shipsList.add(two);
+			shipsList.add(three);
 			
 			System.out.println("Your goal is to sink three battleships.");
 			System.out.println("Tiger, Eagle and Wolverine");
@@ -49,7 +50,7 @@ public class GameLauncher {
 					break;
 				
 				if (result.equals("kill")) {
-					shipList.remove(shipToTest);
+					shipsList.remove(shipToTest);
 					break;
 				}
 			}
