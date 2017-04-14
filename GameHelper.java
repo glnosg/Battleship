@@ -51,7 +51,7 @@ public class GameHelper {
 						success = false;
 					if (x > 0 && (location % gridLength == 0))
 						success = false;
-					else {
+				}	else {
 						 //System.out.print(" used " + location);
 						success = false;
 					}
