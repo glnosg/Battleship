@@ -16,7 +16,7 @@ public class Ship {
 	public String checkYourself() {
 		
 		String result = "miss";
-		int index = locationCells.indexOf(userInput);
+		int index = locationCells.indexOf(String userInput);
 		
 		if (index >= 0)
 			locationCells.remove(index);
