@@ -1,4 +1,4 @@
-impor java.util.*;
+import java.util.*;
 
 public class Ship {
 	
