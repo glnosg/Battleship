@@ -36,7 +36,7 @@ public class GameHelper {
 		comCount++;
 		int incr = 1;
 		if ((comCount % 2) == 1)
-			incr gridLength;
+			incr = gridLength;
 		
 		while(!success & attempts++ < 200) {
 			location = (int) (Math.random() * gridSize);
@@ -44,7 +44,7 @@ public class GameHelper {
 			int x = 0;
 			success = true;
 			while(success && x < comSize) {
-				if (grid[]location == 0) {
+				if (grid[location] == 0) {
 					coords[x++] = location;
 					location += incr;
 					if (location >= gridSize) 
